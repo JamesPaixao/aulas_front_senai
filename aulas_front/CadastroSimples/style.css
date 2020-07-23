@@ -1,0 +1,131 @@
+body{
+    background-color: rgba(4, 47, 4, 0.877);
+}
+.cadastro-form{
+    background-color: white;
+    width: 80vw;
+    margin: 10vh auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
+}
+.titulo{
+    background-color: rgb(16, 167, 2);
+    height: 45px;
+    text-align: center;
+    font: bold calc(12px + 1vw)/45px sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 0px 5px black;
+    color: white;
+}
+.subtitulo{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+.subtitulo>div{
+    color: green;
+    font: bold calc(12px + 1vw)/45px sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+.botao{
+    font: bold calc(2px + 1vw) sans-serif;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: green;
+    color: white;
+}
+.conteiner-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000A0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+}
+.modal{
+    width: 70vw;
+    margin: 10vh auto;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.conteiner-modal.exibirModal{
+    opacity: 1;
+    z-index: 999;
+}
+.form {
+    display: grid;
+    grid-template-areas: " nome nome nome nome "
+     " email email celular celular "
+      " endereco numero bairro bairro "
+       " cidade cidade estado cep ";
+    gap: 10px;
+    padding: 2vw;
+}
+ 
+#nome { grid-area: nome;}
+ 
+#email { grid-area: email;}
+ 
+#celular { grid-area: celular;}
+ 
+#endereco { grid-area: endereco;}
+ 
+#numero { grid-area: numero;}
+ 
+#bairro { grid-area: bairro;}
+ 
+#cidade { grid-area: cidade;}
+ 
+#estado { grid-area: estado;}
+ 
+#cep { grid-area: cep;}
+
+.form > input{
+    width: 100%;
+}
+
+.acao{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+.botao{
+    font: bold calc(2px + 1vw) sans-serif;
+    margin-right: 0.5vw;
+}
+.tabela {
+    width: 100%;
+    background-color: rgb(16, 167, 2);
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+th {
+    padding: 5px;
+    color: white;
+    font: bold calc(3px + 1vw) arial;
+}
+ 
+td {
+    border-radius: 5px;
+    border: 1px black solid;
+    color: black;
+    font: bold calc(2px + 1vw) arial;
+}
+ 
+.registros tr {
+    background-color: white;
+}
+ 
+.registros tr:hover {
+    background-color: grey;
+}

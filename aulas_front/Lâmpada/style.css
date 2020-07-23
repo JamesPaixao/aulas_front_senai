@@ -1,0 +1,23 @@
+body{
+    color: #777777;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interruptor{
+	width: 10vw;
+	color: #ffffff;
+	padding: 10px 20px;
+    border-radius: 30px;
+	background-color: green;
+	border: 1px solid #777777;
+    cursor: pointer;
+}
+
+#lampada {
+    cursor: pointer;
+}

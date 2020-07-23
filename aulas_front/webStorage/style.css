@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
+.names{
+    height: 30px;
+    width: 50px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
